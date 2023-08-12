@@ -33,6 +33,11 @@ jobs:
 
       - name: Run tests
         run: npm test
+        
+      - name: Apply branch protection
+        run: npm run ci
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT }}        
 
       - name: Build package
         run: npm run build
@@ -79,7 +84,4 @@ jobs:
             echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}" > .npmrc
             npm publish
 
-      - name: Apply branch protection
-        run: node repo-rules.js
-        env:
-          GITHUB_TOKEN: ${{ secrets.PAT }}
+
