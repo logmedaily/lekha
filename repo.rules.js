@@ -22,8 +22,7 @@ async function applyProtection(branch) {
             required_approving_review_count: 1 // At least one approval required
         },
         restrictions: {
-            users: [owner], // Only allow the owner to push
-            teams: [] // You can specify teams here if needed
+            users: [owner],
         }
     });
     console.log(`Branch protection applied to ${branch}`);
