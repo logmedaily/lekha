@@ -33,11 +33,7 @@ jobs:
 
       - name: Run tests
         run: npm test
-        
-      - name: Apply branch protection
-        run: npm run ci
-        env:
-          GITHUB_TOKEN: ${{ secrets.PAT }}        
+
 
       - name: Build package
         run: npm run build
