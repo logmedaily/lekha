@@ -17,8 +17,7 @@
     "test": "jest --coverage",
     "clean": "rimraf dist",
     "build": "webpack --mode production",
-    "rebuild": "npm run clean && npm run build",
-    "ci": "node repo.rules.js"
+    "rebuild": "npm run clean && npm run build"
   },
   "repository": {
     "type": "git",
