@@ -33,6 +33,7 @@
   "devDependencies": {
     "@babel/core": "^7.22.5",
     "@babel/preset-env": "^7.22.5",
+    "@octokit/rest": "^20.0.1",
     "babel-loader": "^9.1.2",
     "compression-webpack-plugin": "^10.0.0",
     "fs": "^0.0.1-security",
