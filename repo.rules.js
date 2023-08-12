@@ -21,9 +21,6 @@ async function applyProtection(branch) {
             require_code_owner_reviews: true,
             required_approving_review_count: 1 // At least one approval required
         },
-        restrictions: {
-            users: [owner],
-        }
     });
     console.log(`Branch protection applied to ${branch}`);
 }
